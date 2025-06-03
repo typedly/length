@@ -59,25 +59,22 @@ import {
 
 #### `LengthConfiguration`
 
-[`length-configuration.interface.ts`](https://github.com/typedly/length/blob/main/src/interface/length-configuration.interface.ts)
+[`length-configuration.interface.ts`](https://github.com/typedly/length/blob/main/src/lib/interface/length-configuration.interface.ts)
 
 ```typescript
 import { LengthConfiguration } from '@typedly/length';
 
 // Length and pattern exact value.
-const lengthConfiguration1: LengthConfiguration<> = {
-
-};
-
-// Full configuration with length and pattern settings.
-const lengthConfiguration2: LengthConfiguration<> = {
-
+const lengthConfiguration1: LengthConfiguration<0, 27, 47> = {
+  value: 0,
+  min: 27,
+  max: 47,
 };
 ```
 
 #### `LengthOptions`
 
-[`length-options.interface.ts`](https://github.com/typedly/length/blob/main/src/interface/length-options.interface.ts)
+[`length-options.interface.ts`](https://github.com/typedly/length/blob/main/src/lib/interface/length-options.interface.ts)
 
 ```typescript
 import { LengthOptions } from '@typedly/length';
@@ -94,7 +91,7 @@ export const length: LengthOptions<
 
 #### `LengthSetting`
 
-[`length-setting.interface.ts`](https://github.com/typedly/length/blob/main/src/interface/length-setting.interface.ts)
+[`length-setting.interface.ts`](https://github.com/typedly/length/blob/main/src/lib/interface/length-setting.interface.ts)
 
 ```typescript
 import { LengthSetting } from '@typedly/length';
@@ -120,7 +117,7 @@ const lengthExactSetting: LengthSetting<
 
 #### `LengthSettings`
 
-[`length-settings.interface.ts`](https://github.com/typedly/length/blob/main/src/interface/length-settings.interface.ts)
+[`length-settings.interface.ts`](https://github.com/typedly/length/blob/main/src/lib/interface/length-settings.interface.ts)
 
 ```typescript
 import { LengthSettings } from '@typedly/length';
@@ -138,7 +135,7 @@ const lengthSettings: LengthSettings<
 
 #### `Length`
 
-[`length.interface.ts`](https://github.com/typedly/length/blob/main/src/interface/length.interface.ts)
+[`length.interface.ts`](https://github.com/typedly/length/blob/main/src/lib/interface/length.interface.ts)
 
 ```typescript
 import { Length } from '@typedly/length';
