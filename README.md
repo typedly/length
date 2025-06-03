@@ -48,6 +48,7 @@ npm install @typedly/length --save-peer
 import {
   // Interface.
   Length,
+  LengthConfiguration,
   LengthOptions,
   LengthSetting,
   LengthSettings,
@@ -72,6 +73,85 @@ const lengthConfiguration1: LengthConfiguration<> = {
 const lengthConfiguration2: LengthConfiguration<> = {
 
 };
+```
+
+#### `LengthOptions`
+
+[`length-options.interface.ts`](https://github.com/typedly/length/blob/main/src/interface/length-options.interface.ts)
+
+```typescript
+import { LengthOptions } from '@typedly/length';
+
+export const length: LengthOptions<
+  0,  // Value
+  27, // Min
+  47  // Max
+> = {
+  min: 27,
+  max: 47,
+}
+```
+
+#### `LengthSetting`
+
+[`length-setting.interface.ts`](https://github.com/typedly/length/blob/main/src/interface/length-setting.interface.ts)
+
+```typescript
+import { LengthSetting } from '@typedly/length';
+
+const lengthSetting: LengthSetting<
+  0,  // Value
+  27, // Min
+  47  // Max
+> = {
+  length: {
+    value: 0,
+    min: 27,
+    max: 47,
+  }
+}
+
+const lengthExactSetting: LengthSetting<
+  27 // Value
+> = {
+  length: 27
+}
+```
+
+#### `LengthSettings`
+
+[`length-settings.interface.ts`](https://github.com/typedly/length/blob/main/src/interface/length-settings.interface.ts)
+
+```typescript
+import { LengthSettings } from '@typedly/length';
+
+const lengthSettings: LengthSettings<
+  0,  // Value
+  27, // Min
+  47  // Max
+> = {
+  value: 0,
+  min: 27,
+  max: 47,
+}
+```
+
+#### `Length`
+
+[`length.interface.ts`](https://github.com/typedly/length/blob/main/src/interface/length.interface.ts)
+
+```typescript
+import { Length } from '@typedly/length';
+
+const length: Length<
+  0,  // Value
+  27, // Min
+  47  // Max
+> = {
+  value: 0,
+  min: 27,
+  max: 47,
+}
 ```
 
 ## Contributing
