@@ -4,6 +4,7 @@
 
 export type {
   Length,
+  LengthConfiguration,
   LengthOptions,
   LengthSetting,
   LengthSettings,
