@@ -10,7 +10,8 @@
 export interface Length<
   Value extends number | undefined = number | undefined,
   Min extends number | undefined = number | undefined,
-  Max extends number | undefined = number | undefined
+  Max extends number | undefined = number | undefined,
+  Unit extends string | undefined = string | undefined
 > {
   /**
    * @description Represents expected length of the value, also between min and max.
@@ -29,4 +30,10 @@ export interface Length<
    * @type {Max}
    */
   max: Max;
+
+  /**
+   * @description Represents optional unit of the length, e.g. "cm", "m", "km", "in", "ft", etc.
+   * @type {?Unit}
+   */
+  unit?: Unit;
 }
